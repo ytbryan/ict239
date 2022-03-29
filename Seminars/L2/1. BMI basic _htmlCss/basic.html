@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>This is my first HTMl page</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <h2>Welcome to ICT 239 Web Programming</h2>
+
+    <!-- comment - div is to create sections of the content -->
+    <div>   
+        <b>This is bold</b> <br />
+        <i>This is italic</i> <br />
+        <u>This is underlined</u>
+    </div>
+
+    <div>
+        <p id="redP">THis is paragraph 1</p>
+        <p class="blueP">This is paragraph 2</p>
+        <p class="blueP">This is paragraph 3</p>
+    </div>
+
+    <button id="myBtn" type="button">Click me!</button>
+
+    <a href="http:www.suss.edu.sg">Link here to link to SUSS website</a>
+
+    <br />
+    <br />
+    <div>
+        
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            SOrry your browser does not support SVG
+        </svg>
+    </div>
+
+
+    <script>
+        //Javascript codes starts here
+
+        alert("Welcome to ICT239");
+
+        function changeP()
+        {
+            myP = document.getElementById("redP");
+            myP.style.color = "blue";
+            myP.innerHTML = "Text Changes!";
+        }
+
+
+        document.querySelector("#myBtn").addEventListener("click", changeP);
+
+    </script>    
+
+</body>
+</html>

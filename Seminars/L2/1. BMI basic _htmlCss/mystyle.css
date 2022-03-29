@@ -1,0 +1,18 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: blue;
+}
+/*p {
+    color: red;
+}*/
+
+#redP {
+    color:red;
+}
+
+.blueP {
+    color:green;
+}
