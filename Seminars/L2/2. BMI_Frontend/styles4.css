@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat (6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    background-color: rgb(240, 232, 232);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.container h1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    margin: auto;
+
+}
+
+.weight_label {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+}
+
+.weight_input {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.height_label {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+}
+
+.height_input {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.pre_radio_space {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#bmi {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: inline-block;
+    background-color: rgb(216, 210, 210);
+    opacity: 1;
+    color: rgb(17, 16, 16);
+    font-size: 25px;
+    border: none;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+#bmi:hover {
+    background-color: rgb(207, 219, 241);
+}
+
+#clear{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    display: inline-block;
+    background-color: rgb(121, 117, 117);
+    opacity: 0.4;
+    color: rgb(17, 16, 16);
+    font-size: 25px; 
+    border: none;
+    width: 120px;
+    box-sizing: border-box;
+}
+
+button#clear[usrOn="1"]:hover {
+    background-color: rgb(207, 219, 241) !important;
+}
+
+.output_space {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    overflow-y: scroll;
+    height: 110px;
+    border: solid;
+    background-color: rgb(255, 255, 255);
+}
+

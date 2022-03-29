@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles4.css">
+ 
+</head>
+<body>
+    <div class="container">
+    
+    <h1>BMI Calculator</h1>
+    <!-- <hr> -->
+    <!-- Add in the radio button  
+        https://www.w3schools.com/tags/att_input_type_radio.asp -->
+
+    <!-- Using the row and column methods to arrange 
+        https://www.w3schools.com/howto/howto_css_images_side_by_side.asp  -->
+
+
+    <label for="" class="weight_label">Weight (kilogram)</label>
+    <input type="text" class="weight_input" placeholder="kg" size="13.5"> 
+    <label for="" class="height_label">Height</label>
+    <input type="text" class="height_input" placeholder="m or cm" size="13.5">
+
+    <div class="pre_radio_space"> </div>
+    <input class="radio_m_input" type="radio" id="m" name="length" value="length" checked>
+    <label class="radio_me_label" for="meter">m</label>
+    <input class="radio_cm_input" type="radio" id="cm" name="length" value="length">
+    <label class="radio_cm_label" for="centimeter">cm</label>
+
+    <!-- </div> -->
+
+    <!-- Use Event Binding to Create Event -->
+    <div class="pre_action_space">  </div>
+
+    <button class="r1" type="button" id="bmi" origC="rgb(216, 210, 210)">Calculate</button>
+    <button class="r2" type="button" id="clear" usrOn="0" origC="" origO="">Clear</button>
+
+
+
+
+    <!-- Use onclick method to Create Event -->
+    <!-- <button onclick="bmi()">Calculate</button> -->
+    <!-- Review: https://www.w3schools.com/jsref/event_onclick.asp -->
+
+    <!-- <hr> -->
+    <!-- https://www.w3schools.com/cssref/pr_pos_overflow.asp -->
+    <div class="output_space">
+        <p>The Output Area</p>
+    </div>
+    
+
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="custom4.js"></script>
+</body>
+</html>
