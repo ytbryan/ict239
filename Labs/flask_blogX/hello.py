@@ -1,7 +1,11 @@
-from flask import Flask, jsonify, request, escape
+from flask import Flask, render_template, jsonify, request, escape
+
 
 app = Flask(__name__)
 
+@app.route('/ajax')
+def ajax():
+    return render_template('ajax.html')
 
 @app.route('/')
 def hello():
@@ -13,7 +17,7 @@ def test():
     # process the data received
     print(request.args.get('name'))
     # save to database?
-    dictionary = {"name": [1,2,3,4]}
+    dictionary = {"name": ["hello I am returning something else",2,3,4]}
     # dictionary = {"name": "ytbryan"}
     # pass it back as a json
     return jsonify(dictionary)
