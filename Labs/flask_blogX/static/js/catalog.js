@@ -8,7 +8,7 @@ $("#myButton").click(function(){
 
     // #1 - THIS IS STEP 1 of 2 APRIL
     $.ajax({
-        url: "/test", 
+        url: "/test", //THIS IS STEP 2
         data: json,
         success: function(result){
             //result is the number of records 

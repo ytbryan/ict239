@@ -11,6 +11,7 @@ def ajax():
 def hello():
     return 'Hello, World!'
 
+# STEP 3 - controller 
 @app.route('/test')
 def test():
     print("hello")
